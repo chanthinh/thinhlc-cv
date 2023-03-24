@@ -1,0 +1,316 @@
+// LCT - Desktop First
+:root {
+  --white: #fff;
+  --black: #000;
+  --dark_blue: #1c222f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: "Open Sans", sans-serif;
+}
+
+#luu-chan-thinh {
+  padding: 20px;
+  position: relative;
+
+  .table {
+    display: table;
+    width: 1110px;
+    margin: 0 auto;
+    box-shadow: 1px 1px 6px 0 rgba(28, 34, 47, 0.5);
+
+    .left-column {
+      width: 33.3333%;
+      background-color: var(--dark_blue);
+      display: table-cell;
+      vertical-align: top;
+      color: var(--white);
+
+      .profile {
+        .avatar-wrapper {
+          position: relative;
+          display: block;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          top: 0;
+          padding-bottom: 96%;
+
+          .avatar {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+
+        .item {
+          background: linear-gradient(180deg, #72ceed 0, #27bbec);
+          padding: 14px 20px;
+          display: flex;
+          align-items: center;
+
+          .link {
+            text-decoration: none;
+            color: inherit;
+          }
+
+          span {
+            font-weight: 600;
+            font-size: 14px;
+          }
+
+          ion-icon {
+            font-size: 25px;
+            margin-right: 15px;
+          }
+        }
+      }
+
+      .widgets-wrapper {
+        padding: 60px 25px;
+
+        .title {
+          position: relative;
+          margin-bottom: 13px;
+
+          h2 {
+            font-size: 18px;
+            text-transform: uppercase;
+            font-weight: 400;
+
+            &::after {
+              content: "";
+              display: block;
+              bottom: 0;
+              width: 20px;
+              height: 2px;
+              background-color: var(--white);
+            }
+          }
+        }
+
+        .widgets-personal {
+          font-weight: 300;
+          margin-bottom: 65px;
+
+          .content {
+            display: grid;
+            grid-template-columns: 35% 1fr;
+
+            p {
+              margin-bottom: 5px;
+              display: flex;
+              justify-content: space-between;
+
+              &:last-of-type {
+                margin-bottom: 0;
+              }
+
+              &:not(:has(span)) {
+                padding-left: 20px;
+              }
+            }
+          }
+        }
+
+        .widgets-skills,
+        .widgets-experiences {
+          font-weight: 300;
+          margin-bottom: 65px;
+
+          .skills,
+          .experiences {
+            p {
+              margin-bottom: 5px;
+
+              &:last-of-type {
+                margin-bottom: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .right-column {
+      background-color: var(--white);
+
+      .intro-content {
+        position: relative;
+        padding: 20px;
+
+        .personal-information {
+          display: flex;
+          align-items: flex-end;
+          justify-content: space-between;
+          column-gap: 10px;
+          margin-bottom: 20px;
+
+          .name {
+            font-size: 45px;
+            color: #29bbec;
+            font-weight: 700;
+            letter-spacing: 4px;
+            position: relative;
+            line-height: 1.1;
+
+            &::after {
+              content: "";
+              display: block;
+              position: absolute;
+              height: 3px;
+              width: 50px;
+              background-color: #29bbec;
+            }
+          }
+
+          .position {
+            font-size: 19px;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 2px;
+          }
+        }
+
+        .description {
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 1.5;
+        }
+      }
+
+      .widgets-content {
+        &.experience {
+          .main-title {
+            position: relative;
+            background-color: #19282e;
+            color: #fff;
+            height: 45px;
+            line-height: 44px;
+            margin-bottom: 25px;
+
+            h2 {
+              font-weight: 400;
+              font-size: 17px;
+              text-transform: uppercase;
+              padding-left: 20px;
+              position: relative;
+
+              &::after {
+                content: "";
+                width: 22px;
+                height: 2px;
+                display: block;
+                background-color: #fff;
+                position: absolute;
+                bottom: 8px;
+                left: 20px;
+              }
+            }
+          }
+
+          .list-info {
+            padding: 0 20px;
+
+            .exp-block {
+              display: flex;
+
+              .left {
+                flex-basis: 25%;
+
+                .position {
+                  font-weight: 700;
+                  font-size: 14px;
+                  margin-bottom: 8px;
+                }
+
+                .time {
+                  font-size: 15px;
+                }
+              }
+
+              .right {
+                flex-basis: 75%;
+
+                .company {
+                  font-size: 14px;
+                  margin-bottom: 10px;
+                  font-weight: 600;
+                  text-transform: uppercase;
+                }
+
+                .description {
+                  font-size: 15px;
+
+                  .description-block {
+                    position: relative;
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+                    margin: 20px 0;
+                    padding-bottom: 20px;
+
+                    &:last-of-type {
+                      border-bottom: 0px;
+                    }
+
+                    p {
+                      margin-bottom: 5px;
+
+                      &:last-of-type {
+                        margin-bottom: 0;
+                      }
+
+                      .label {
+                        font-weight: 600;
+                      }
+
+                      .list {
+                        display: inline-block;
+                        padding-left: 30px;
+                      }
+                    }
+
+                    .certificate {
+                      color: inherit;
+
+                      ion-icon {
+                        width: 20px;
+                        height: 20px;
+                        vertical-align: bottom;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          .hobbies {
+            display: flex;
+            align-items: center;
+            column-gap: 60px;
+            padding: 0 20px 20px 20px;
+
+            .hobby {
+              text-align: center;
+
+              ion-icon {
+                width: 35px;
+                height: 35px;
+                color: #27bbec;
+              }
+
+              p {
+                font-weight: 600;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

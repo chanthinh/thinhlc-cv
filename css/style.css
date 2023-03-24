@@ -1,0 +1,265 @@
+:root {
+  --white: #fff;
+  --black: #000;
+  --dark_blue: #1c222f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: "Open Sans", sans-serif;
+}
+
+#luu-chan-thinh {
+  padding: 20px;
+  position: relative;
+}
+#luu-chan-thinh .table {
+  display: table;
+  width: 1110px;
+  margin: 0 auto;
+  box-shadow: 1px 1px 6px 0 rgba(28, 34, 47, 0.5);
+}
+#luu-chan-thinh .table .left-column {
+  width: 33.3333%;
+  background-color: var(--dark_blue);
+  display: table-cell;
+  vertical-align: top;
+  color: var(--white);
+}
+#luu-chan-thinh .table .left-column .profile .avatar-wrapper {
+  position: relative;
+  display: block;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  padding-bottom: 96%;
+}
+#luu-chan-thinh .table .left-column .profile .avatar-wrapper .avatar {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#luu-chan-thinh .table .left-column .profile .item {
+  background: linear-gradient(180deg, #72ceed 0, #27bbec);
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+}
+#luu-chan-thinh .table .left-column .profile .item .link {
+  text-decoration: none;
+  color: inherit;
+}
+#luu-chan-thinh .table .left-column .profile .item span {
+  font-weight: 600;
+  font-size: 14px;
+}
+#luu-chan-thinh .table .left-column .profile .item ion-icon {
+  font-size: 25px;
+  margin-right: 15px;
+}
+#luu-chan-thinh .table .left-column .widgets-wrapper {
+  padding: 60px 25px;
+}
+#luu-chan-thinh .table .left-column .widgets-wrapper .title {
+  position: relative;
+  margin-bottom: 13px;
+}
+#luu-chan-thinh .table .left-column .widgets-wrapper .title h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+#luu-chan-thinh .table .left-column .widgets-wrapper .title h2::after {
+  content: "";
+  display: block;
+  bottom: 0;
+  width: 20px;
+  height: 2px;
+  background-color: var(--white);
+}
+#luu-chan-thinh .table .left-column .widgets-wrapper .widgets-personal {
+  font-weight: 300;
+  margin-bottom: 65px;
+}
+#luu-chan-thinh .table .left-column .widgets-wrapper .widgets-personal .content {
+  display: grid;
+  grid-template-columns: 35% 1fr;
+}
+#luu-chan-thinh .table .left-column .widgets-wrapper .widgets-personal .content p {
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+#luu-chan-thinh .table .left-column .widgets-wrapper .widgets-personal .content p:last-of-type {
+  margin-bottom: 0;
+}
+#luu-chan-thinh .table .left-column .widgets-wrapper .widgets-personal .content p:not(:has(span)) {
+  padding-left: 20px;
+}
+#luu-chan-thinh .table .left-column .widgets-wrapper .widgets-skills,
+#luu-chan-thinh .table .left-column .widgets-wrapper .widgets-experiences {
+  font-weight: 300;
+  margin-bottom: 65px;
+}
+#luu-chan-thinh .table .left-column .widgets-wrapper .widgets-skills .skills p,
+#luu-chan-thinh .table .left-column .widgets-wrapper .widgets-skills .experiences p,
+#luu-chan-thinh .table .left-column .widgets-wrapper .widgets-experiences .skills p,
+#luu-chan-thinh .table .left-column .widgets-wrapper .widgets-experiences .experiences p {
+  margin-bottom: 5px;
+}
+#luu-chan-thinh .table .left-column .widgets-wrapper .widgets-skills .skills p:last-of-type,
+#luu-chan-thinh .table .left-column .widgets-wrapper .widgets-skills .experiences p:last-of-type,
+#luu-chan-thinh .table .left-column .widgets-wrapper .widgets-experiences .skills p:last-of-type,
+#luu-chan-thinh .table .left-column .widgets-wrapper .widgets-experiences .experiences p:last-of-type {
+  margin-bottom: 0;
+}
+#luu-chan-thinh .table .right-column {
+  background-color: var(--white);
+}
+#luu-chan-thinh .table .right-column .intro-content {
+  position: relative;
+  padding: 20px;
+}
+#luu-chan-thinh .table .right-column .intro-content .personal-information {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  margin-bottom: 20px;
+}
+#luu-chan-thinh .table .right-column .intro-content .personal-information .name {
+  font-size: 45px;
+  color: #29bbec;
+  font-weight: 700;
+  letter-spacing: 4px;
+  position: relative;
+  line-height: 1.1;
+}
+#luu-chan-thinh .table .right-column .intro-content .personal-information .name::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 50px;
+  background-color: #29bbec;
+}
+#luu-chan-thinh .table .right-column .intro-content .personal-information .position {
+  font-size: 19px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+#luu-chan-thinh .table .right-column .intro-content .description {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+#luu-chan-thinh .table .right-column .widgets-content.experience .main-title {
+  position: relative;
+  background-color: #19282e;
+  color: #fff;
+  height: 45px;
+  line-height: 44px;
+  margin-bottom: 25px;
+}
+#luu-chan-thinh .table .right-column .widgets-content.experience .main-title h2 {
+  font-weight: 400;
+  font-size: 17px;
+  text-transform: uppercase;
+  padding-left: 20px;
+  position: relative;
+}
+#luu-chan-thinh .table .right-column .widgets-content.experience .main-title h2::after {
+  content: "";
+  width: 22px;
+  height: 2px;
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  bottom: 8px;
+  left: 20px;
+}
+#luu-chan-thinh .table .right-column .widgets-content.experience .list-info {
+  padding: 0 20px;
+}
+#luu-chan-thinh .table .right-column .widgets-content.experience .list-info .exp-block {
+  display: flex;
+}
+#luu-chan-thinh .table .right-column .widgets-content.experience .list-info .exp-block .left {
+  flex-basis: 25%;
+}
+#luu-chan-thinh .table .right-column .widgets-content.experience .list-info .exp-block .left .position {
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+#luu-chan-thinh .table .right-column .widgets-content.experience .list-info .exp-block .left .time {
+  font-size: 15px;
+}
+#luu-chan-thinh .table .right-column .widgets-content.experience .list-info .exp-block .right {
+  flex-basis: 75%;
+}
+#luu-chan-thinh .table .right-column .widgets-content.experience .list-info .exp-block .right .company {
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+#luu-chan-thinh .table .right-column .widgets-content.experience .list-info .exp-block .right .description {
+  font-size: 15px;
+}
+#luu-chan-thinh .table .right-column .widgets-content.experience .list-info .exp-block .right .description .description-block {
+  position: relative;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin: 20px 0;
+  padding-bottom: 20px;
+}
+#luu-chan-thinh .table .right-column .widgets-content.experience .list-info .exp-block .right .description .description-block:last-of-type {
+  border-bottom: 0px;
+}
+#luu-chan-thinh .table .right-column .widgets-content.experience .list-info .exp-block .right .description .description-block p {
+  margin-bottom: 5px;
+}
+#luu-chan-thinh .table .right-column .widgets-content.experience .list-info .exp-block .right .description .description-block p:last-of-type {
+  margin-bottom: 0;
+}
+#luu-chan-thinh .table .right-column .widgets-content.experience .list-info .exp-block .right .description .description-block p .label {
+  font-weight: 600;
+}
+#luu-chan-thinh .table .right-column .widgets-content.experience .list-info .exp-block .right .description .description-block p .list {
+  display: inline-block;
+  padding-left: 30px;
+}
+#luu-chan-thinh .table .right-column .widgets-content.experience .list-info .exp-block .right .description .description-block .certificate {
+  color: inherit;
+}
+#luu-chan-thinh .table .right-column .widgets-content.experience .list-info .exp-block .right .description .description-block .certificate ion-icon {
+  width: 20px;
+  height: 20px;
+  vertical-align: bottom;
+}
+#luu-chan-thinh .table .right-column .widgets-content.experience .hobbies {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+  padding: 0 20px 20px 20px;
+}
+#luu-chan-thinh .table .right-column .widgets-content.experience .hobbies .hobby {
+  text-align: center;
+}
+#luu-chan-thinh .table .right-column .widgets-content.experience .hobbies .hobby ion-icon {
+  width: 35px;
+  height: 35px;
+  color: #27bbec;
+}
+#luu-chan-thinh .table .right-column .widgets-content.experience .hobbies .hobby p {
+  font-weight: 600;
+}/*# sourceMappingURL=style.css.map */
